@@ -1,0 +1,11 @@
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\EnvDevLabo4.csprojResolveAssemblyReference.cache
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\App.g.i.cs
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\App.g.cs
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\MainPage.g.i.cs
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\MainPage.g.cs
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\XamlTypeInfo.g.cs
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\App.xaml
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\MainPage.xaml
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\App.xbf
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\MainPage.xbf
+U:\bac 3\EnvDevLog\EnvDevLabo4\EnvDevLabo4\obj\x86\Debug\XamlSaveStateFile.xml
