@@ -6,9 +6,17 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
+    DataContext="{Binding Source={StaticResource Locator}, Path=    Main}">
 
+    <Grid x:Name="CommandeBarCourse" Grid.Row="2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <AppBarButton x:Name="EditStudent" Grid.Column="1" Icon="Edit" Command="{Binding EditStudentCommand}"></AppBarButton>
+    </Grid>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView Grid.Row="1" Width="355" HorizontalAlignment="Left" ItemsSource="{Binding Students, Mode=TwoWay}"/>
+        <ListView Grid.Row="1" Width="355" HorizontalAlignment="Left" ItemsSource="{Binding Students, Mode=TwoWay}" SelectedItem="{Binding SelectedStudent, Mode=TwoWay}"/>
     </Grid>
 </Page>

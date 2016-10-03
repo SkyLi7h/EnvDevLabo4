@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnvDevLabo4.Model
 {
-    class Student
+    public class Student
     {
         public String Name
         {

@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Views;
 using Microsoft.Practices.ServiceLocation;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,12 @@ namespace EnvDevLabo4.ViewModel
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<SecondViewModel>();
+
+            NavigationService navigationPages = new NavigationService();
+            SimpleIoc.Default.Register<INavigationService>(() => navigationPages);
+            navigationPages.Configure("MainPage", typeof(MainPage));
+            navigationPages.Configure("SecondPage", typeof(SecondPage));
         }
 
         public MainViewModel Main
@@ -21,6 +28,14 @@ namespace EnvDevLabo4.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
+            }
+        }
+
+        public SecondViewModel MainSecond
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<SecondViewModel>();
             }
         }
 

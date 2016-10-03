@@ -5,9 +5,7 @@
     xmlns:vm="using:EnvDevLabo4.ViewModel"
     xmlns:local="using:EnvDevLabo4"
     RequestedTheme="Light">
-
     <Application.Resources>
-        <vm:ViewModelLocator x:Key="Locator/"/>
+        <vm:ViewModelLocator x:Key="Locator"/>
     </Application.Resources>
-
 </Application>

@@ -1,5 +1,7 @@
 ﻿using EnvDevLabo4.Model;
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,6 +15,17 @@ namespace EnvDevLabo4.ViewModel
     public class MainViewModel : ViewModelBase, INotifyPropertyChanged
     {
         private ObservableCollection<Student> _students;
+        private Student _selectedStudent;
+        private INavigationService _navigationService;
+
+        [PreferredConstructor]
+
+        public MainViewModel(INavigationService navigationService)
+        {
+            _navigationService = navigationService;
+
+            Students = new ObservableCollection<Student>(AllStudents.GetAllStudents());
+        }
 
         public ObservableCollection<Student> Students
         {
@@ -21,6 +34,19 @@ namespace EnvDevLabo4.ViewModel
             {
                 _students = value;
                 RaisePropertyChanged("Students");
+            }
+        }
+
+        public Student SelectedStudent
+        {
+            get { return _selectedStudent; }
+            set
+            {
+                _selectedStudent = value;
+                if(_selectedStudent != null)
+                {
+                    RaisePropertyChanged("SelectedStudent");
+                }
             }
         }
 

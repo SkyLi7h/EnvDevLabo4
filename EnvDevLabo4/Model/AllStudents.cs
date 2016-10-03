@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnvDevLabo4.Model
 {
-    class AllStudents
+    public class AllStudents
     {
         public static IEnumerable<Student> Students { get; set; }
 
